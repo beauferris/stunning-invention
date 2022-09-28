@@ -1,12 +1,13 @@
 import './RepoCard.css';
 
-const repoCard = (props: any) => {
+const repoCard = (props) => {
   return (
     <div className="repoCard">
       <h1>{props.name}</h1>
       <p>{props.description}</p>
       <p>{props.language}</p>
-      <p>{props.forkCount}</p>
+      <p>Fork Count: {props.forkCount}</p>
+      <p>Created On: {props.creationDate}</p>
     </div>
   );
 };
